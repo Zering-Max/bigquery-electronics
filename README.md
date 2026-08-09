@@ -6,9 +6,9 @@ Le but ici est d'analyser les comportements d'achats sur ce site e-commerce d'é
 
 ## STRUCTURE du "PIPELINE" DE DONNEES
 
-l'importation de la donnée brute et ses transformations ont été réalisées sur BigQuery et on suite l'architecture classique DBT :
+l'importation de la donnée brute et ses transformations ont été réalisées sur BigQuery et on suit l'architecture classique DBT :
 
-staging => intermediate => mart
+**staging => intermediate => mart**
 
 Les différentes tables SQL utilisées sont présentées dans le dossier `models`.
 
@@ -19,7 +19,7 @@ Le dashboard final est présenté ici : https://lookerstudio.google.com/reportin
 ### Staging
 
 Dans cet étape, on s'occupe essentiellement du nettoyage de la donnée brute (valeurs null, aberrantes, etc..) afin d'avoir un tableau de données de départ propre.
-Dans le cas ici il y avaait notamment un pb de transactions sur des dates abberantes (1970) et de formatage de la colonne datetime.
+Dans le cas ici il y avait notamment un pb de transactions sur des dates abberantes (1970) et de formatage de la colonne datetime.
 
 ### Intermediate
 
