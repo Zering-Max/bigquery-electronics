@@ -6,7 +6,9 @@ Le but ici est d'analyser les comportements d'achats sur ce site e-commerce d'é
 
 ## STRUCTURE du "PIPELINE" DE DONNEES
 
-l'importation de la donnée brute et ses transformations suivent l'architecture DBT classique (staging/intermediate/mart) et ont été réalisées sur BigQuery.
+l'importation de la donnée brute et ses transformations ont été réalisées sur BigQuery et on suite l'architecture classique DBT :
+
+staging => intermediate => mart
 
 Les différentes tables SQL utilisées sont présentées dans le dossier `models`.
 
