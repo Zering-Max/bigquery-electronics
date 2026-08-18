@@ -1,6 +1,8 @@
 # PRESENTATION DU PROJET
 
-La donnée brute a été importée de ce Dataset Kaggle : https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-electronics-store
+La donnée brute retail a été importée de ce Dataset Kaggle : https://www.kaggle.com/datasets/mkechinov/ecommerce-purchase-history-from-electronics-store
+
+Celle des données d'impacts carbone ont repris (avec une table entièrement construite) des données de l'ADEME : https://impactco2.fr/outils
 
 Le but ici est d'analyser les comportements d'achats sur ce site e-commerce d'électronique de l'année 2020 afin d'en déduire des recomandations pour la suite pour augmenter le chiffre d'affaires mais aussi limiter l'impact carbone des achats.
 
@@ -27,6 +29,7 @@ Dans cet étape on peut préparer différents tableaux de données (avec des ajo
 Ici il s'agissait de créer deux tables :
 - **int_categories_table** : Elle permettait d'aggréger correctement pour la suite les catégories, sous-catgéories, voire sous-sous-catégories car ces 'subtilités' dans la table brut étaient tout mélangés.
 - **int_transactions_date_table** : Une autre pour l'aspect purement transactionnel et de la date à la suite de la table *int_categories_table*. Il fallait notamment créer une nouvelle clé primaire unique (id_transaction) pour faire la distinction entre plusieurs actes d'achats de catégories différentes le même jour et aggréger plus finement les catégories par date.
+- **int_transactions_co2impact_table** : à partir de la table *int_transactions_date_table*, on y a joint les données d'impact carbone et fonction des catégories et sous-catégories.
 
 ### Mart
 
@@ -36,3 +39,6 @@ On a 4 tables mart :
 - *int_categories_table* => **final_top_revenus_electronics_by_brand**
 - *int_transactions_date_table* => **final_top_revenus_proportion_kitchen-environment_by_subsubcategory**
 - *int_transactions_date_table* => **final_top_revenus_proportion_electronics_by_subcategory**
+- *int_transactions_co2impact_table* => **final_top_co2impact_by_electronics_sub_category**
+- *int_transactions_co2impact_table* => **final_top_co2impact_by_appliances_sub_category**
+- *int_transactions_co2impact_table* => **final_top_co2impact_by_computers_sub_category**
