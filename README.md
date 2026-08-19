@@ -5,7 +5,7 @@ La donnée brute retail a été importée de ce Dataset Kaggle : https://www.kag
 Celle des données d'impacts carbone ont repris (avec une table entièrement construite) des données de l'ADEME : https://impactco2.fr/outils
 **à noter que, dans le cas des impacts carbone, tous les produits retails du dataset n'ont pas pu être mesurés, seulement les principaux faisant partie de l'analyse principale (les trois catégories) ici.**
 
-Le but ici est d'analyser les comportements d'achats sur ce site e-commerce d'électronique de l'année 2020 afin d'en déduire des recomandations pour la suite pour augmenter le chiffre d'affaires mais aussi limiter l'impact carbone des achats.
+Le but ici est d'analyser les comportements d'achats sur ce site e-commerce d'électronique de l'année 2020 afin d'augmenter le chiffre d'affaires mais aussi limiter l'impact carbone des achats.
 
 ## STRUCTURE du "PIPELINE" DE DONNEES
 
