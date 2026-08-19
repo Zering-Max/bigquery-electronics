@@ -27,7 +27,7 @@ Dans le cas ici il y avait notamment un pb de transactions sur des dates abberan
 ### Intermediate
 
 Dans cet étape on peut préparer différents tableaux de données (avec des ajouts de colonne, calculs, jointure, etc..) afin d'être utilisée idéalement plusieurs fois pour la dernière étape "métier" (mart).
-Ici il s'agissait de créer deux tables :
+Voici les tables :
 - **int_categories_table** : Elle permettait d'aggréger correctement pour la suite les catégories, sous-catgéories, voire sous-sous-catégories car ces 'subtilités' dans la table brut étaient tout mélangés.
 - **int_transactions_date_table** : Une autre pour l'aspect purement transactionnel et de la date à la suite de la table *int_categories_table*. Il fallait notamment créer une nouvelle clé primaire unique (id_transaction) pour faire la distinction entre plusieurs actes d'achats de catégories différentes le même jour et aggréger plus finement les catégories par date.
 - **int_transactions_co2impact_table** : à partir de la table *int_transactions_date_table*, on y a joint les données d'impact carbone en fonction des catégories et sous-catégories sélectionnées. Les produits n'ayant pas de mesures d'impacts ont vu leur impact mis par défaut à 0.
