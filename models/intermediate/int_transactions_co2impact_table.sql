@@ -24,14 +24,6 @@ sub_sub_cat_join_co2_query AS (
     OR (category = 'appliances')
     OR (category = 'computers' AND sub_category != 'notebook')
 ),
--- La troisième CTE consiste à mettre les GES à 0 pour les autres catégories de produits qui ne nous intéressent pas dans l'analyse
-other_cat_query AS (
-  SELECT
-  itdt.*,
-  CAST(0 AS FLOAT64) AS GES_kg_co2,
-  FROM `int_transactions_date_table` AS itdt
-  WHERE category NOT IN ('electronics', 'appliances', 'computers')
-)
 
 SELECT
 *
@@ -40,7 +32,3 @@ UNION ALL
 SELECT
 *
 FROM sub_sub_cat_join_co2_query
-UNION ALL
-SELECT
-*
-FROM other_cat_query
