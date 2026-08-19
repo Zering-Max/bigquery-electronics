@@ -35,7 +35,7 @@ Ici il s'agissait de créer deux tables :
 ### Mart
 
 Il s'agit ici de transformer la donnée en un tableau de données métier prêt à l'emploi pour de la visualisation (ici Looker Studio).
-On a 4 tables mart :
+Les voici :
 - *int_categories_table* => **final_top_revenus_by_category**
 - *int_categories_table* => **final_top_revenus_electronics_by_brand**
 - *int_transactions_date_table* => **final_top_revenus_proportion_kitchen-environment_by_subsubcategory**
