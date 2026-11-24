@@ -37,10 +37,10 @@ Voici les tables :
 
 Il s'agit ici de transformer la donnée en un tableau de données métier prêt à l'emploi pour de la visualisation (ici Looker Studio).
 Les voici :
-- *int_categories_table* => **final_top_revenus_by_category**
-- *int_categories_table* => **final_top_revenus_electronics_by_brand**
-- *int_transactions_date_table* => **final_top_revenus_proportion_kitchen-environment_by_subsubcategory**
-- *int_transactions_date_table* => **final_top_revenus_proportion_electronics_by_subcategory**
-- *int_transactions_co2impact_table* => **final_top_co2impact_by_electronics_sub_category**
-- *int_transactions_co2impact_table* => **final_top_co2impact_by_appliances_sub_category**
-- *int_transactions_co2impact_table* => **final_top_co2impact_by_computers_sub_category**
+- TOP REVENUS PAR CATEGORIE : *int_categories_table* => **final_top_revenus_by_category**
+- TOP REVENUS PAR MARQUE DE LA CATEGORIE "ELECTRONICS" : *int_categories_table* => **final_top_revenus_electronics_by_brand**
+- REPARTITION DES TOP REVENUS DE LA SOUS-CATEGORIE "KITCHEN" et "ENVIRONMENT" PAR SOUS-SOUS-CATEGORIE : *int_transactions_date_table* => **final_top_revenus_proportion_kitchen-environment_by_subsubcategory**
+- REPARTITION DES TOP REVENUS DE LA CATEGORIE "ELECTRONICS" PAR SOUS-CATEGORIE : *int_transactions_date_table* => **final_top_revenus_proportion_electronics_by_subcategory**
+- TOP IMPACTS CO2 DE LA CATEGORIE "ELECTRONICS" PAR SOUS_CATEGORIE :  *int_transactions_co2impact_table* => **final_top_co2impact_by_electronics_sub_category**
+- TOP IMPACTS CO2 DE LA CATEGORIE "APPLIANCES" PAR SOUS_CATEGORIE : *int_transactions_co2impact_table* => **final_top_co2impact_by_appliances_sub_category**
+- TOP IMPACTS CO2 DE LA CATEGORIE "COMPUTERS" PAR SOUS_CATEGORIE :  *int_transactions_co2impact_table* => **final_top_co2impact_by_computers_sub_category**

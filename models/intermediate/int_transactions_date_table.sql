@@ -7,8 +7,8 @@
 WITH sub_query AS 
 (
   SELECT
-  CONCAT(order_id,'-',product_id) as transaction_id,
-  CAST(SUBSTR(event_time, 0, 10) AS DATE) as event_time,
+  CONCAT(order_id,'-',product_id) AS transaction_id,
+  CAST(SUBSTR(event_time, 0, 10) AS DATE) AS event_time,
   brand,
   price,
   category,
